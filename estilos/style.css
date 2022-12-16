@@ -188,6 +188,25 @@ canvas{
     justify-content: center;
     align-items: center;
 }
+.btn-group{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 1em;
+}
+.nav-port{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.nav-port:hover{
+    background-color: var(--cor3);
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -259,22 +278,6 @@ canvas{
 .plus button:hover{
     background-color: var(--cor1);
     transition: 1s;
-}
-.btn-group{
-    display: flex;
-    flex-basis: 100%;
-    justify-content: flex-start;
-    padding: 20px;
-    margin-left: 1em;
-    cursor: pointer;
-}
-.btn-group ul{
-    background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 5px;
-}
-.btn-group a:hover{
-    color: var(--cor5);
 }
 
 /*CONTACT*/
@@ -367,8 +370,10 @@ footer{
         margin-bottom: 10px;
     }
     .imghome{
-        margin-top: -15px;
-        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        max-width: 300px;
         max-height: 400px;
     }
     .btn{
