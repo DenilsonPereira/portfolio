@@ -357,10 +357,10 @@ footer{
     }
     .item1{
         display: flex;
+        justify-content: center;
         height: 100%;
         width: 100%;
-        flex-direction: column;
-        padding: 150px 0 50px 0;
+        padding: 150px 0;
     }
     .txthome{
         padding-left: 50px;
@@ -370,11 +370,7 @@ footer{
         margin-bottom: 10px;
     }
     .imghome{
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        width: 300px;
-        max-height: 400px;
+        display: none;
     }
     .btn{
         margin-top: 15px;
