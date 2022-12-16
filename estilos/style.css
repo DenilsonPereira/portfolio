@@ -398,6 +398,14 @@ footer{
     .card:last-child{
         margin-bottom: 0;
     }
+    #contact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact>h1{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
