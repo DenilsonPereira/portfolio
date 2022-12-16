@@ -373,17 +373,10 @@ footer{
         display: flex;
         justify-content: center;
         align-items: baseline;
-        max-width: 300px;
-        max-height: 400px;
     }
     .btn{
         margin-top: 15px;
         padding: 15px;
-    }
-    .img-about{
-        max-width: 400px;
-        max-height: 200px;
-        margin-bottom: -50px;
     }
     .txt-about{
         text-align: center;
