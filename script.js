@@ -26,20 +26,3 @@ contact.addEventListener("click", () =>{
     hamburguer.classList.toggle('active');
     navMenu.classList.toggle('active');
 })
-
-function openPage(x,y){
-    let indice = x;
-    let target = y;
-    let url = '/content'+ indice +'.html';
-    let xml = new XMLHttpRequest();
-
-    xml.onreadystatechange = function(){
-        if(xml.readyState == 4 && xml.status == 200){
-            document.getElementById(target).innerHTML = xml.responseText;
-        }
-    };
-
-    xml.open("GET", url, true);
-
-    xml.send()
-}

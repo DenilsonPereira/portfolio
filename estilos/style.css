@@ -184,7 +184,6 @@ canvas{
 .projetos{
     display: flex;
     flex-wrap: wrap;
-    max-width: 980px;
     justify-content: center;
     align-items: center;
 }
@@ -267,16 +266,18 @@ canvas{
     justify-content: center;  
 }
 .plus button{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-weight: bold;
     width: 20%;
-    padding: 10px ;
+    margin: 50px 0px -50px 0px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    color: var(--cor4);
-    background-color: var(--cor2);
     cursor: pointer;
 }
 .plus button:hover{
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     transition: 1s;
 }
 
@@ -286,6 +287,7 @@ canvas{
     display: flex;
     flex-basis: 100%;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .form input{
     border: none;
@@ -405,6 +407,9 @@ footer{
     }
     #contact>h1{
         margin-bottom: 20px;
+    }
+    #contact>.form{
+        max-width: 300px;
     }
 }
 
