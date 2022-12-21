@@ -255,6 +255,8 @@ canvas{
 .cod{
     background-color: var(--cor6);
     color: var(--cor4);
+    font-size: 1em;
+    font-weight: bolder;
 }
 .cod:hover{
     background-color: var(--cor5);
