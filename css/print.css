@@ -1,0 +1,18 @@
+.home, .header, .services, .portfolio, .contact, .footer{
+    display: none;
+}
+.about{
+    padding: 0 20px;
+    color: black;
+}
+.about a{
+    display: none;
+}
+.about-img::after{
+    content: '\ATelefone: (87)98115-6973 \A Email: denilsondasilva98@hotmail.com \A Github: https://github.com/DenilsonPereira \A Linkedin: https://www.linkedin.com/in/denilson-da-silva-pereira';
+    white-space: pre-wrap;
+}
+@page{
+    size: auto; 
+    margin: 0mm;
+}

@@ -2,195 +2,200 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/print.css" media="print">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Denilson Silva</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Denilson Silva - Portfolio</title>
 </head>
 <body>
-    <header>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">DENILSON</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
         <nav class="navbar">
-            <a href="#" class="logo">DENILSON<span style="color: #FF0000;">.</strong></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link home">Home</a></li>
-                <li class="nav-item"><a href="#aboutme" class="nav-link about">Sobre mim</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link portfolio">Portfólio</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link contact">Contatos</a></li>
-            </ul>
-            <div class="hamburguer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="#home" class="active" class="LinkClass">Home</a>
+            <a href="#about" class="LinkClass">Sobre</a>
+            <a href="#skills" class="LinkClass">Skills</a>
+            <a href="#portfolio" class="LinkClass">Portfólio</a>
+            <a href="#contact" class="LinkClass">Contato</a>
+            <a><i class='bx bxs-sun' id="dark-mode-toggle" ></i></a>
         </nav>
     </header>
 
-    <main class="container">
-        <!--HOME-->
-        <section class="item1" id="home">
-            <!--APRESENTAÇÃO HOME-->
-            <div class="txthome">
-                <h1>Denilson da Silva Pereira</h1>
-                <p>Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos por mim.
-                </p>
-                <input class="btn" type="button" value="Contato" onclick="location.href='index.html#contact';" >
-            </div>
-            <!--IMAGEM/FOTO HOME-->
-            <div class="imghome">
-                <img src="image/my-face.webp" alt="Meu rosto em desenho">
-            </div>
-        </section>
-        <!--SOBRE MIM-->
-        <section class="item2" id="aboutme">
-            <!--IMAGEM/FOTO MINHA-->
-            <div >
-                <img src="image/about.webp" alt="" class="Meu avatar">
-            </div>
-            <!--TEXTO SOBRE MIM E BOTÃO CURRICULO-->
-            <div class="txt-about">
-                <p>
-                    Olá me chamo Denilson Pereira, tenho 24 anos e sou do estado de Pernambuco, no Brasil. Sou estudante de Análise e Desenvolvimento no IFPE (Instituto Federal de Pernambuco) - Campus Garanhuns. Tive contato com computador já na minha pré-adolescência com meus 14 anos, onde me apaixonei pela área de computação.
-                </p>
-                <br>
-                <p>
-                    Após o término do meu ensino médio, cursei o técnico em desenvolvimento de sistemas no ETE Agamenon Magalhães(EAD), onde aprendi sobre desenvolvimento web e mobile. Desde então venho estudando novas tecnologias e aprimorando minha base de conhecimentos.
-                </p>
-                <a href="files/Denilson_da_Silva_Pereira.pdf" download="Denilson_Silva_Currículo" type="application/pdf"><input type="button" value="Download Currículo" class="btn" id="btn_down"></a>
-            </div>
-            <!--GRÁFICO FERRAMENTAS/TECNOLOGIAS-->
-            <div class="tools">
-                <h2>Ferramentas e Tecnologias</h2>
-                <br>
-                <canvas id="myChart"></canvas>
-            </div>
-        </section>
-        <!--PORTFOLIO-->
-        <section class="item3" id="portfolio">
-            <h1 id="titulo-pag">Projetos</h1>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, eu sou</h3>
+            <h1>Denilson Silva</h1>
+            <h3>E eu sou <span class="multiple-text"></span></h3>
+            <p>Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos por mim.</p>
 
-            <!--Onde carrega os projetos-->
-            <div id="projetos" class="projetos">
-                <!--CARD 1-->
-                <div class="card">
-                    <div class="img-card">
-                        <img src="image/site_login.webp" alt="Tela de Login">
-                    </div>
-                    <h3>Login responsivo</h3>
-                    <span>Telas de Login modernas e responsivas feitas com HTML5, CSS3 e Javascript.</span>
-                    <div>
-                        <button class="cod"><a href="https://github.com/DenilsonPereira/login" target="_blank">Código</a></button>
-                        <button class="btn"><a href="https://denilsonpereira.github.io/login/" target="_blank">Acessar</a></button>
-                    </div>
-                </div>
-                <!--Card 2-->
-                <div class="card">
-                    <div class="img-card">
-                        <img src="image/dark_calculator.webp" alt="Imagem do site da calculadora">
-                    </div>
-                    <h3>Calculadora Javascript</h3>
-                    <span>Calculadora de funções básicas em Javascript, com dark mode e responsiva.</span>
-                    <div>
-                        <button class="cod"><a href="https://github.com/DenilsonPereira/Calculadora-JS" target="_blank">Código</a></button>
-                        <button class="btn"><a href="https://denilsonpereira.github.io/Calculadora-JS/" target="_blank">Acessar</a></button>
-                    </div>
-                </div>
-                
-                <!--CARD 3-->
-                <div class="card">
-                    <div class="img-card">
-                        <img src="image/relogio.webp" alt="Imagem do site do relógio">
-                    </div>
-                    <h3>Relógio JS</h3>
-                    <span>Relógio responsivo com horário atual, feito com Javascript, CSS3 e HTML5.</span>
-                    <div>
-                        <button class="cod"><a href="https://github.com/DenilsonPereira/Relogio_JS" target="_blank">Código</a></button>
-                        <button class="btn"><a href="https://denilsonpereira.github.io/Relogio_JS/" target="_blank">Acessar</a></button>
-                    </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100005363430745" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/denilson_gunner/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/DenilsonPereira" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/denilson-da-silva-pereira" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="files/Denilson_da_Silva_Pereira.pdf" download="Denilson_Silva_Currículo" type="application/pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/perfil.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <h3>Web Developer</h3>
+            <p>Olá me chamo Denilson Pereira, tenho 25 anos e sou do estado de Pernambuco, no Brasil. Sou estudante de Análise e Desenvolvimento no IFPE (Instituto Federal de Pernambuco) - Campus Garanhuns. Tive contato com computador já na minha pré-adolescência com meus 14 anos, onde me apaixonei pela área de computação.</p>
+
+            <p>Após o término do meu ensino médio, cursei o técnico em desenvolvimento de sistemas no ETE Agamenon Magalhães(EAD), onde aprendi sobre desenvolvimento web e mobile. Desde então venho estudando novas tecnologias e aprimorando minha base de conhecimentos.</p>
+            <a href="https://github.com/DenilsonPereira" class="btn" target="_blank"><i class='bx bxl-github'></i> Github</a>
+        </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Minhas <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div id="html" class="skill-bar">
+              <span class="skill-name">HTML</span>
+              <div class="bar">
+                <span class="percentage">0%</span>
+              </div>
+            </div>
+            <div id="css" class="skill-bar">
+              <span class="skill-name">CSS</span>
+              <div class="bar">
+                <span class="percentage">0%</span>
+              </div>
+            </div>
+            <div id="sql" class="skill-bar">
+                <span class="skill-name">SQL</span>
+                <div class="bar">
+                  <span class="percentage">0%</span>
                 </div>
             </div>
-            <div class="plus">
-                <button><a href="projetos.html">Mais projetos</a></button>
+            <div id="php" class="skill-bar">
+                <span class="skill-name">PHP</span>
+                <div class="bar">
+                  <span class="percentage">0%</span>
+                </div>
+              </div>
+            <div id="javascript" class="skill-bar">
+              <span class="skill-name">JavaScript</span>
+              <div class="bar">
+                <span class="percentage">0%</span>
+              </div>
             </div>
-            
-        </section>
+        </div>
+    </section>
 
-        <!--CONTATO-->
-        <section class="item4" id="contact">
-            <h1 id="titulo-pag">Contatos</h1>
-            <div class="contact">
-                <p><a href="mailto:denilsondasilva98@hotmail.com" target="_blank"><i class="fa fa-envelope icon" style="font-size:32px"></i> denilsondasilva98@hotmail.com</a></p>
-                <br>
-                <p><a href="https://www.linkedin.com/in/denilson-da-silva-pereira" target="_blank"><i class="fa fa-linkedin-square icon" style="font-size:36px"></i> Denilson da Silva Pereira</a></p>
-                <br>
-                <p><a href="https://github.com/DenilsonPereira" target="_blank"><i class="fa fa-github icon" style="font-size:36px"></i> DenilsonPereira</a></p>
-                <br>
-                <p><a href="https://api.whatsapp.com/send?phone=5587981156973" target="_blank"><i class="fa fa-whatsapp icon" style="font-size:36px"></i> +55 (087) 98115-6973</a></p>
-            </div>
-            <div id="form">
-                <form action="https://formspree.io/f/mdojqgjk" method="post" autocomplete="on" class="form">
-                    <div>
-                        <label for="inome">Nome: </label><br>
-                        <input type="text" name="Nome" id="inome" autocomplete="name" placeholder="Nome completo" minlength="5" maxlength="30" required>
-                    </div>
-                    <div>
-                        <label for="iemail">Email: </label><br>
-                        <input type="email" name="Email" id="iemail" autocomplete="email" placeholder="email@mail.com" maxlength="30" required>
-                    </div>
-                    <div>
-                        <label for="imsg">Mensagem: </label><br>
-                        <textarea name="Mensagem" id="imsg" cols="30" rows="10" placeholder="Escreva aqui sua mensagem..."></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar" class="btn">
-                    </div>
-                </form>
-            </div>
-        </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Projetos <span>Recentes</span></h2>
 
-    </main>
-    <footer>
-        <!--COPYRIGHT-->
-        <p>&copy;copyright 2022. Desenvolvido por <strong><a href="https://www.linkedin.com/in/denilson-da-silva-pereira" target="_blank">Denilson da Silva Pereira.</a></strong></p>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Tela de login</h4>
+                    <p>Telas de Login feitas com HTML5, CSS3 e JS Puro.</p>
+                    <a href="https://denilsonpereira.github.io/login/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Calculadora</h4>
+                    <p>Calculadora de funções básicas em Javascript, com dark mode.</p>
+                    <a href="https://denilsonpereira.github.io/Calculadora-JS/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Relógio</h4>
+                    <p>Relógio responsivo, feito com Javascript, CSS3 e HTML5.</p>
+                    <a href="https://denilsonpereira.github.io/Relogio_JS/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Site</h4>
+                    <p>Projeto Android feito no curso de HTML5 e CSS3 do curso em vídeo.</p>
+                    <a href="https://denilsonpereira.github.io/projeto-android/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Calculadora imc</h4>
+                    <p>Calculadora feita em PHP. Com dados do Ministério da Saúde.</p>
+                    <a href="https://imc-php.000webhostapp.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Tela de Login</h4>
+                    <p>Tela de login, feita utilizando media query.</p>
+                    <a href="https://denilsonpereira.github.io/projeto_login/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contate-<span>me!</span></h2>
+
+        <div class="contact-text">
+            <p><a href="#"><i class='bx bxl-whatsapp'></i> (87)9.8115-6973</a></p>
+            <p><a href="mailto:denilsondasilva98@hotmail.com"><i class="bx bx-envelope"></i> denilsondasilva98@hotmail.com</a></p>
+            <p><i class="bx bx-map"></i> Garanhuns-PE</p>
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Denilson | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script>
-        var xValues = ["HTML5", "CSS3", "JavaScript", "PHP", "Mysql"];
-        var yValues = [90, 55, 50, 70, 75,0,100];
-        var barColors = ["#d74b24", "#2449d8","#e4d04b","#787cb4","#005782"];
-        
-        new Chart("myChart", {
-          type: "horizontalBar",
-          data: {
-            labels: xValues,
-            datasets: [{
-              backgroundColor: barColors,
-              data: yValues,
-            }]
-          },
-          options: {
-            legend: {display: false},
-            title: {
-              display: false
-            },
-            tooltips: {
-             enabled: true,
-             mode: 'label',
-             callbacks: {
-                label: function(tooltipItem, data) {
-                    var indice = tooltipItem.index;
-                    return data.datasets[0].data[indice] + "% " + 'de conhecimento em ' + data.labels[indice];
-                }
-             },
-             titleAlign: 'center',
-             titleMarginBottom: 8,
-             displayColors: true
-            },
-          }
-        });
-    </script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Script custom-->
+    <script src="js/script.js"></script>
 </body>
 </html>
