@@ -18,7 +18,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -35,8 +35,8 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
-    // scroll reveal
-ScrollReveal({ 
+// scroll reveal
+ScrollReveal({
     // reset: true,
     distance: '80px',
     duration: 2000,
@@ -48,7 +48,7 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-    //  typed js
+//  typed js
 
 const typed = new Typed('.multiple-text', {
     strings: ['Frontend Developer', 'Backend Developer', 'Web Developer'],
@@ -62,37 +62,38 @@ const toggleDarkMode = () => {
     const body = document.body;
     body.classList.toggle('dark-mode');
 };
-      
+
 // button dark mode
 document.addEventListener('DOMContentLoaded', function () {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
-  
+
     darkModeToggle.addEventListener('click', toggleDarkMode);
-  
+
     function toggleDarkMode() {
 
-      darkModeToggle.classList.toggle('bxs-sun');
-      darkModeToggle.classList.toggle('bxs-moon');
-      
-      document.body.classList.toggle('dark-mode');
+        darkModeToggle.classList.toggle('bxs-sun');
+        darkModeToggle.classList.toggle('bxs-moon');
+
+        document.body.classList.toggle('dark-mode');
     }
-  });
- 
-  document.addEventListener("DOMContentLoaded", function () {
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const skills = [
-      { name: "HTML", level: 95 },
-      { name: "CSS", level: 90 },
-      { name: "SQL", level: 80 },
-      { name: "PHP", level: 75 },
-      { name: "JavaScript", level: 70 }
+        { name: "HTML", level: 95 },
+        { name: "CSS", level: 85 },
+        { name: "SQL", level: 70 },
+        { name: "PHP", level: 70 },
+        { name: "JavaScript", level: 65 },
+        { name: "Java", level: 50 }
     ];
-  
+
     skills.forEach(skill => {
-      const skillBar = document.getElementById(skill.name.toLowerCase());
-      const bar = skillBar.querySelector(".bar");
-      const percentage = skillBar.querySelector(".percentage");
-  
-      bar.style.width = `${skill.level}%`;
-      percentage.textContent = `${skill.level}%`;
+        const skillBar = document.getElementById(skill.name.toLowerCase());
+        const bar = skillBar.querySelector(".bar");
+        const percentage = skillBar.querySelector(".percentage");
+
+        bar.style.width = `${skill.level}%`;
+        percentage.textContent = `${skill.level}%`;
     });
-  });
+});
