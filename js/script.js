@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "SQL", level: 70 },
         { name: "PHP", level: 70 },
         { name: "JavaScript", level: 65 },
-        { name: "Java", level: 50 }
+        { name: "Java", level: 60 }
     ];
 
     skills.forEach(skill => {
